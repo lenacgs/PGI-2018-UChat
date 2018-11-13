@@ -1,0 +1,154 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\74f42f7a96e1f737c57da7b56dfbfc5d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f4fdbbf006e92c9461fda37c98fb1fa1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\b698786c882e7e02e5278f6c02ad4f36\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\dc344335e09b2bd971aa75a3f2eef05e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\1138cc621a987586b27dd40162f0f3d0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\e9b6f45aac5a1ab782a6a7a23f243267\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\60d67f337bd6d3c7dff12bea7359c490\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\eac8d6d565c4d3670e7ab045d02d7c59\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\cc7a421216c946d4ecff39184526b9a4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\698fec0436e12b094ab28d0eb26465b8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\d8bbcc96550a50815ec1b369c0d84f11\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\adcd835a27b7a944a7fa49a35487b524\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\ea609c73df11c61ddb342ac307159567\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\f8c645ec1a0c27935560901761c4e096\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\069a7135391a47a79a6b587efe64f33b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\51d7e2c0e23faf3e8f39ae2ec64a044a\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\461f7f446c34837316bbe5ed11fec2fe\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\eb19cef6a29cdb3d7701f066d0af16a5\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\d5e82f497707cf232b933a460970e6c6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\2efcb7f8a1f21c91c7ed751f66f68cf9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\fce141c413bcbf4c88d8ee27d8d7e35a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\a67b9482f3526418b402476b0130a95c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\36923701b103519b696e97468236a728\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\413311ddb1d9a5f47b268802d7c13235\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\2c2c176312fdd58ec093225c78dc01e7\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\cc28078c85bf0072d1f62ea5e44ad035\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\383bb63dbabd66caff5f012f0459590e\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:3:5-28
+		INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f4fdbbf006e92c9461fda37c98fb1fa1\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f4fdbbf006e92c9461fda37c98fb1fa1\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\51d7e2c0e23faf3e8f39ae2ec64a044a\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\51d7e2c0e23faf3e8f39ae2ec64a044a\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\461f7f446c34837316bbe5ed11fec2fe\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\461f7f446c34837316bbe5ed11fec2fe\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\51d7e2c0e23faf3e8f39ae2ec64a044a\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.pgi.uchat.MainActivity
+ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\74f42f7a96e1f737c57da7b56dfbfc5d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\74f42f7a96e1f737c57da7b56dfbfc5d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f4fdbbf006e92c9461fda37c98fb1fa1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f4fdbbf006e92c9461fda37c98fb1fa1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\b698786c882e7e02e5278f6c02ad4f36\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\b698786c882e7e02e5278f6c02ad4f36\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\dc344335e09b2bd971aa75a3f2eef05e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\dc344335e09b2bd971aa75a3f2eef05e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\1138cc621a987586b27dd40162f0f3d0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\1138cc621a987586b27dd40162f0f3d0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\e9b6f45aac5a1ab782a6a7a23f243267\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\e9b6f45aac5a1ab782a6a7a23f243267\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\60d67f337bd6d3c7dff12bea7359c490\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\60d67f337bd6d3c7dff12bea7359c490\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\eac8d6d565c4d3670e7ab045d02d7c59\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\eac8d6d565c4d3670e7ab045d02d7c59\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\cc7a421216c946d4ecff39184526b9a4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\cc7a421216c946d4ecff39184526b9a4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\698fec0436e12b094ab28d0eb26465b8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\698fec0436e12b094ab28d0eb26465b8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\d8bbcc96550a50815ec1b369c0d84f11\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\d8bbcc96550a50815ec1b369c0d84f11\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\adcd835a27b7a944a7fa49a35487b524\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\adcd835a27b7a944a7fa49a35487b524\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\ea609c73df11c61ddb342ac307159567\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\ea609c73df11c61ddb342ac307159567\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\f8c645ec1a0c27935560901761c4e096\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\f8c645ec1a0c27935560901761c4e096\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\069a7135391a47a79a6b587efe64f33b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\069a7135391a47a79a6b587efe64f33b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\51d7e2c0e23faf3e8f39ae2ec64a044a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\51d7e2c0e23faf3e8f39ae2ec64a044a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\461f7f446c34837316bbe5ed11fec2fe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\461f7f446c34837316bbe5ed11fec2fe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\eb19cef6a29cdb3d7701f066d0af16a5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\eb19cef6a29cdb3d7701f066d0af16a5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\d5e82f497707cf232b933a460970e6c6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\d5e82f497707cf232b933a460970e6c6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\2efcb7f8a1f21c91c7ed751f66f68cf9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\2efcb7f8a1f21c91c7ed751f66f68cf9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\fce141c413bcbf4c88d8ee27d8d7e35a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\fce141c413bcbf4c88d8ee27d8d7e35a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\a67b9482f3526418b402476b0130a95c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\a67b9482f3526418b402476b0130a95c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\36923701b103519b696e97468236a728\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\36923701b103519b696e97468236a728\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\413311ddb1d9a5f47b268802d7c13235\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\413311ddb1d9a5f47b268802d7c13235\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\2c2c176312fdd58ec093225c78dc01e7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\2c2c176312fdd58ec093225c78dc01e7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\cc28078c85bf0072d1f62ea5e44ad035\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\cc28078c85bf0072d1f62ea5e44ad035\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\383bb63dbabd66caff5f012f0459590e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\383bb63dbabd66caff5f012f0459590e\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
