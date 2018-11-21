@@ -2,6 +2,9 @@ package com.pgi.uchat;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -11,16 +14,19 @@ import android.widget.TextView;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-    private String TAG = "Main Activity";
+    private String TAG = "MainActivity";
     private ListView campoMensagens;
     private EditText messageToSend;
     private MessageAdapter messageAdapter;
-
+    private String randomColor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //randomColor = getRandomColor();
+        randomColor = "#1a70c5";
 
         messageAdapter = new MessageAdapter(this);
         campoMensagens = (ListView) findViewById(R.id.ScrollMensagens);
@@ -36,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
                 newMessage(auxMes, true);
             }
         });
+
+        newMessage("Para começares uma nova conversa envia: Olá Salvador", false);
     }
 
     protected void newMessage(String msg, Boolean user) {
@@ -44,12 +52,14 @@ public class MainActivity extends AppCompatActivity {
             data = new MemberData();
         }
         else{
-            data = new MemberData("UChat",getRandomColor());
+            data = new MemberData("Salvador",randomColor);
         }
 
         Message message = new Message(msg,user,data);
         messageAdapter.add(message);
         campoMensagens.setSelection(campoMensagens.getCount() -1);
+
+
     }
 
     private String getRandomColor() {
@@ -59,6 +69,27 @@ public class MainActivity extends AppCompatActivity {
             sb.append(Integer.toHexString(r.nextInt()));
         }
         return sb.toString().substring(0, 7);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+            case (R.id.item1):
+
+                return true;
+            case (R.id.item2):
+
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
 

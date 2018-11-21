@@ -1584,11 +1584,11 @@
                 {
                     "source": "D:\\Pedro\\GitHub\\PGI-2018-UChat\\UChat\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
-                        "startLines": "4,2,3",
+                        "startLines": "7,5,6",
                         "startColumns": "4,4,4",
-                        "startOffsets": "157,57,105",
+                        "startOffsets": "311,211,259",
                         "endColumns": "45,46,50",
-                        "endOffsets": "198,99,151"
+                        "endOffsets": "352,253,305"
                     },
                     "to": {
                         "startLines": "153,154,155",
