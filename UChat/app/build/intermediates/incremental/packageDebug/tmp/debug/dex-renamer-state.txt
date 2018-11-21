@@ -1,4 +1,4 @@
-#Wed Nov 21 00:35:36 GMT 2018
+#Wed Nov 21 14:15:05 GMT 2018
 path.1=classes.dex
 path.0=classes.dex
 renamed.5=classes6.dex
@@ -7,12 +7,12 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.5=D\:\\Pedro\\GitHub\\PGI-2018-UChat\\UChat\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
-base.4=D\:\\Pedro\\GitHub\\PGI-2018-UChat\\UChat\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
-base.3=D\:\\Pedro\\GitHub\\PGI-2018-UChat\\UChat\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
-base.2=D\:\\Pedro\\GitHub\\PGI-2018-UChat\\UChat\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
-base.1=D\:\\Pedro\\GitHub\\PGI-2018-UChat\\UChat\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
-base.0=D\:\\Pedro\\GitHub\\PGI-2018-UChat\\UChat\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+base.5=C\:\\Users\\santa\\Desktop\\Aulas\\3 ano\\PGI\\PGI-2018-UChat\\UChat\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
+base.4=C\:\\Users\\santa\\Desktop\\Aulas\\3 ano\\PGI\\PGI-2018-UChat\\UChat\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+base.3=C\:\\Users\\santa\\Desktop\\Aulas\\3 ano\\PGI\\PGI-2018-UChat\\UChat\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
+base.2=C\:\\Users\\santa\\Desktop\\Aulas\\3 ano\\PGI\\PGI-2018-UChat\\UChat\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+base.1=C\:\\Users\\santa\\Desktop\\Aulas\\3 ano\\PGI\\PGI-2018-UChat\\UChat\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
+base.0=C\:\\Users\\santa\\Desktop\\Aulas\\3 ano\\PGI\\PGI-2018-UChat\\UChat\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
 path.5=classes.dex
 path.4=classes.dex
 path.3=classes.dex

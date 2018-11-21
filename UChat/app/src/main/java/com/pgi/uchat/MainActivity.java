@@ -13,12 +13,19 @@ import android.widget.TextView;
 
 import java.util.Random;
 
+//Livrarias RiveScript
+//https://github.com/aichaos/rivescript-java
+import com.rivescript.Config;
+import com.rivescript.RiveScript;
+
+
 public class MainActivity extends AppCompatActivity {
     private String TAG = "MainActivity";
     private ListView campoMensagens;
     private EditText messageToSend;
     private MessageAdapter messageAdapter;
     private String randomColor;
+    private RiveScript bot;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +35,19 @@ public class MainActivity extends AppCompatActivity {
         //randomColor = getRandomColor();
         randomColor = "#1a70c5";
 
+        //Inicializar bot para responder ao utilizador
+        bot = new RiveScript(Config.utf8());
+        bot.loadDirectory("com/pgi/uchat/"); //Diretoria não encontrada não importa o que eu ponha ??
+        bot.loadFile("./salvador.rive");
+        bot.sortReplies();
+
         messageAdapter = new MessageAdapter(this);
         campoMensagens = (ListView) findViewById(R.id.ScrollMensagens);
         campoMensagens.setAdapter(messageAdapter);
 
         messageToSend = (EditText) findViewById(R.id.MessageToSend);
         ImageButton sendButton = (ImageButton) findViewById(R.id.sendButton);
+
 
         sendButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
