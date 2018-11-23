@@ -1,5 +1,7 @@
 package com.pgi.uchat;
 
+import android.content.res.AssetManager;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +13,11 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.Random;
 
 //Livrarias RiveScript
@@ -32,13 +39,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        copyAssets();
+
         //randomColor = getRandomColor();
         randomColor = "#1a70c5";
 
+        File rootDataDir = getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS);
+
+        //File rootDataDir = this.getFilesDir();
+
+        Log.e(TAG, rootDataDir.toString());
+
         //Inicializar bot para responder ao utilizador
         bot = new RiveScript(Config.utf8());
-        bot.loadDirectory("com/pgi/uchat/"); //Diretoria não encontrada não importa o que eu ponha ??
-        bot.loadFile("./salvador.rive");
+        //bot.loadDirectory("com/pgi/uchat/"); //Diretoria não encontrada não importa o que eu ponha ??
+        //bot.loadDirectory(rootDataDir);
+        bot.loadFile(rootDataDir+"/salvador.rive");
         bot.sortReplies();
 
         messageAdapter = new MessageAdapter(this);
@@ -103,6 +119,47 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void copyAssets() {
+        AssetManager assetManager = getAssets();
+        String filename = "salvador.rive";
+
+        InputStream in = null;
+        OutputStream out = null;
+        try {
+            in = assetManager.open(filename);
+            File outFile = new File(getExternalFilesDir(null)+"/Documents");
+            if(!outFile.exists()) outFile.mkdirs();
+            outFile = new File(getExternalFilesDir(null)+"/Documents", filename);
+            out = new FileOutputStream(outFile);
+            copyFile(in, out);
+        } catch(IOException e) {
+            Log.e("tag", "Failed to copy asset file: " + filename, e);
+        }
+        finally {
+            if (in != null) {
+                try {
+                    in.close();
+                } catch (IOException e) {
+                    // NOOP
+                }
+            }
+            if (out != null) {
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    // NOOP
+                }
+            }
+        }
+    }
+    private void copyFile(InputStream in, OutputStream out) throws IOException {
+        byte[] buffer = new byte[1024];
+        int read;
+        while((read = in.read(buffer)) != -1){
+            out.write(buffer, 0, read);
         }
     }
 }
