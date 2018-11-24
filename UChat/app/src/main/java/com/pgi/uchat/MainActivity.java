@@ -103,8 +103,8 @@ public class MainActivity extends AppCompatActivity {
     }
     protected RiveScript Start(RiveScript bot) {
         bot.setSubstitution("oi","ola" );
+        bot.setSubstitution("olá","ola" );
         bot.sortReplies();
-
         return bot;
     }
     @Override
