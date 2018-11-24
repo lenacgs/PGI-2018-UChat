@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
+ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-23:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\74f42f7a96e1f737c57da7b56dfbfc5d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f4fdbbf006e92c9461fda37c98fb1fa1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\b698786c882e7e02e5278f6c02ad4f36\AndroidManifest.xml:17:1-22:12
@@ -31,25 +31,29 @@ MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\santa\.gradle\cache
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\2c2c176312fdd58ec093225c78dc01e7\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\cc28078c85bf0072d1f62ea5e44ad035\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\383bb63dbabd66caff5f012f0459590e\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-23:12
 	package
 		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:3:5-28
 		INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-23:12
 		INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-21:12
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:1-23:12
 		INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:5:5-96
+	android:name
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:5:22-77
 application
-ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:5:5-19:19
+ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:7:5-21:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f4fdbbf006e92c9461fda37c98fb1fa1\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f4fdbbf006e92c9461fda37c98fb1fa1\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\51d7e2c0e23faf3e8f39ae2ec64a044a\AndroidManifest.xml:22:5-94
@@ -59,31 +63,31 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\santa\.gra
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\santa\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\51d7e2c0e23faf3e8f39ae2ec64a044a\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:13:9-40
 activity#com.pgi.uchat.MainActivity
-ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:12:9-18:20
+ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:14:9-20:20
 	android:name
-		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:12:19-47
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:14:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:13:13-17:29
+ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:14:17-69
+ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:14:25-66
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:16:17-77
+ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml:18:27-74
 uses-sdk
 INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\src\main\AndroidManifest.xml

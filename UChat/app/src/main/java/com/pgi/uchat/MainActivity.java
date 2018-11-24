@@ -55,8 +55,7 @@ public class MainActivity extends AppCompatActivity {
         //bot.loadDirectory("com/pgi/uchat/"); //Diretoria não encontrada não importa o que eu ponha ??
         //bot.loadDirectory(rootDataDir);
         bot.loadFile(rootDataDir+"/salvador.rive");
-        bot.sortReplies();
-
+        bot = Start(bot);
         messageAdapter = new MessageAdapter(this);
         campoMensagens = (ListView) findViewById(R.id.ScrollMensagens);
         campoMensagens.setAdapter(messageAdapter);
@@ -70,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
                 String auxMes = messageToSend.getText().toString();
                 messageToSend.getText().clear();
                 newMessage(auxMes, true);
+                String reply = bot.reply("Salvador", auxMes);
+                newMessage(reply, false);
             }
         });
 
@@ -100,7 +101,12 @@ public class MainActivity extends AppCompatActivity {
         }
         return sb.toString().substring(0, 7);
     }
+    protected RiveScript Start(RiveScript bot) {
+        bot.setSubstitution("oi","ola" );
+        bot.sortReplies();
 
+        return bot;
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);

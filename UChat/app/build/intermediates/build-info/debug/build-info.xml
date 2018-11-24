@@ -5,39 +5,44 @@
     build-mode="COLD"
     density="xhdpi"
     format="10"
+    ir-eligibility="METHOD_ADDED"
     plugin-version="3.1.4"
-    timestamp="1542810272870"
+    timestamp="1543062621753"
     token="-5305098913293223972"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="773" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="118" />
     <task
         name="verifier"
-        duration="0" />
+        duration="85" />
+
+    <artifact
+        location="C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1542810051920"
+        timestamp="1543062025105"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
+            location="C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
@@ -61,24 +66,20 @@
             location="C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            location="C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
+            location="C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1542810233267"
+        ir-eligibility="METHOD_ADDED"
+        timestamp="1543062621753"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\santa\Desktop\Aulas\3 ano\PGI\PGI-2018-UChat\UChat\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
     </build>
-    <build
-        build-mode="COLD"
-        timestamp="1542810272870"
-        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
