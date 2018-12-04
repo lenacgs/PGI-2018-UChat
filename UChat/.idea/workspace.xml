@@ -78,7 +78,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pgi/uchat/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="561">
               <caret line="56" column="51" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
             </state>
           </provider>
@@ -87,8 +87,8 @@
       <file leaf-file-name="salvador.rive" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/assets/salvador.rive">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="291">
+              <caret line="231" column="52" lean-forward="true" selection-start-line="231" selection-start-column="52" selection-end-line="231" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -108,6 +108,7 @@
       <find>getColor</find>
       <find>UChat</find>
       <find>messageToSend</find>
+      <find>:)</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2139,7 +2140,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="width" value="979" />
+    <option name="width" value="980" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -2148,8 +2149,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2161,7 +2163,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2346,7 +2347,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50402683" side_tool="true" visible="true" weight="0.32365748" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="12" sideWeight="0.50402683" side_tool="true" visible="true" weight="0.32365748" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" weight="0.3280116" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" sideWeight="0.49932885" weight="0.32946298" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49731544" weight="0.3280116" />
@@ -2355,7 +2356,7 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.016107382" />
-      <window_info active="true" anchor="bottom" id="Build" order="10" sideWeight="0.49597314" visible="true" weight="0.32365748" />
+      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49597314" weight="0.32365748" />
       <window_info anchor="right" id="Gradle" order="5" weight="0.3295302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24973147" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" weight="0.32975295" />
@@ -2631,13 +2632,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
         </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/boot_message.xml">
@@ -2723,15 +2724,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pgi/uchat/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="561">
           <caret line="56" column="51" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/assets/salvador.rive">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="291">
+          <caret line="231" column="52" lean-forward="true" selection-start-line="231" selection-start-column="52" selection-end-line="231" selection-end-column="52" />
         </state>
       </provider>
     </entry>
