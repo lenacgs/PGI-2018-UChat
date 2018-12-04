@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, rootDataDir.toString());
 
         //Inicializar bot para responder ao utilizador
-        bot = new RiveScript(Config.utf8());
+        bot = new RiveScript(Config.newBuilder().utf8(true).unicodePunctuation("[.,!?;:]").build());
         //bot.loadDirectory("com/pgi/uchat/"); //Diretoria não encontrada não importa o que eu ponha ??
         //bot.loadDirectory(rootDataDir);
         bot.loadFile(rootDataDir+"/salvador.rive");

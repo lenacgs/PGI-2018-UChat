@@ -1,92 +1,147 @@
 ! version = 2.0
 
 //FAQ por terminar http://www.uc.pt/fpce/estudantes/informacoes/faq/geral
-//------------------------------------------------Saudações
+//------------------------------------------------Saudações-----------------------------------------
 
-+ ola
++ (ola|hello|boas)
 - Ola! \nO meu nome é Salvador, sou um bot programado para responder a qualquer questão que tenhas sobre a Universidade de Coimbra!
 
-+ adeus
++ (adeus|xau)
 - Adeus! Foi um prazer falar contigo!
 
-//---------------------------------------Perguntas relacionadas com o NONIO
+//---------------------------------------Perguntas relacionadas com o NONIO-------------------------
 
-
-+ o que e * nonio
++ o que e * nonio[*]
 - O NONIO (Novo sistema Académico Universitário) é uma plataforma informática que pretende abranger toda a informação relacionada com a gestão académica da Universidade. 
 
-+ o que e * nonio *
-- O NONIO (Novo sistema Académico Universitário) é uma plataforma informática que pretende abranger toda a informação relacionada com a gestão académica da Universidade. 
-
-+ como * nonio
++ como * nonio[*]
 - O acesso ao NONIO é feito através da internet https://inforestudante.uc.pt/nonio/security/init.do e é restrito a estudantes autenticados por utilizador e password.
 
 + O que * utilizador
 - No campo “utilizador” terá que introduzir o seu número de estudante. 
 
-+ esqueci * password
++ (esqueci|esqueci-me) * password[*]
 - Se tem e-mail oficial confirmado pode fazer a recuperação da password através do link existente na página “Esqueceu-se da palavra-chave?”
 
 
 
-//---------------------------------------Direitos e deveres do estudante
+//---------------------------------------Direitos e deveres do estudante----------------------------
 
-+ onde * direitos * estudante
++ onde * (direitos|deveres) * estudante[*]
 - - Proceder à leitura dos documentos e normativos que pretendem assegurar a transparência e uniformidade da relação pedagógica, nomeadamente, o Regulamento de Direitos Especiais dos Estudantes da Universidade de Coimbra - Regulamento n.º 597/2011 - 02 de abril de 2012.\n- Recorrer ao Provedor do Estudante.\n- Mais informação consultar: http://www.uc.pt/academicos/regulamentos
 
-+ onde * direitos * estudante
-- - Proceder à leitura dos documentos e normativos que pretendem assegurar a transparência e uniformidade da relação pedagógica, nomeadamente, o Regulamento de Direitos Especiais dos Estudantes da Universidade de Coimbra - Regulamento n.º 597/2011 - 02 de abril de 2012.\n- Recorrer ao Provedor do Estudante.\n- Mais informação consultar: http://www.uc.pt/academicos/regulamentos
-
-+ * plagio *
++ [*]plagio[*]
 - A fraude, cópia ou plágio cometidos em qualquer prova de avaliação de uma unidade curricular poderão levar à suspensão da avaliação escolar do estudante durante o período de um ano, bem como à suspensão das suas atividades escolares por um período temporário.\nPodes consultar: http://www.uc.pt/academicos/regulamentos/docs_uc/regulamento_disciplinar
 
-+ plagio *
-- A fraude, cópia ou plágio cometidos em qualquer prova de avaliação de uma unidade curricular poderão levar à suspensão da avaliação escolar do estudante durante o período de um ano, bem como à suspensão das suas atividades escolares por um período temporário.\nPodes consultar: http://www.uc.pt/academicos/regulamentos/docs_uc/regulamento_disciplinar
 
-+ * plagio
-- A fraude, cópia ou plágio cometidos em qualquer prova de avaliação de uma unidade curricular poderão levar à suspensão da avaliação escolar do estudante durante o período de um ano, bem como à suspensão das suas atividades escolares por um período temporário.\nPodes consultar: http://www.uc.pt/academicos/regulamentos/docs_uc/regulamento_disciplinar
+//----------------------------------------Sobre a Candidaturo---------------------------------------
 
-+ plagio
-- A fraude, cópia ou plágio cometidos em qualquer prova de avaliação de uma unidade curricular poderão levar à suspensão da avaliação escolar do estudante durante o período de um ano, bem como à suspensão das suas atividades escolares por um período temporário.\nPodes consultar: http://www.uc.pt/academicos/regulamentos/docs_uc/regulamento_disciplinar
-
-//--------------------------------------- Sobre a Universidade (ainda não está começado)
-
-+ * candidatar * curso *
++ [*](candidatar|candidatar-me) * curso *
 - Pode encontrar informações sobre cursos disponíveis, prazos de candidatura e condições de acesso em http://www.uc.pt/candidatos/escola sendo esta informação atualizada em cada ano nomeadamente no que se refere às fases de candidatura.
 
-+ candidatar * curso *
-- Pode encontrar informações sobre cursos disponíveis, prazos de candidatura e condições de acesso em http://www.uc.pt/candidatos/escola sendo esta informação atualizada em cada ano nomeadamente no que se refere às fases de candidatura.
-
-+ * candidatar-me * curso *
-- Pode encontrar informações sobre cursos disponíveis, prazos de candidatura e condições de acesso em http://www.uc.pt/candidatos/escola sendo esta informação atualizada em cada ano nomeadamente no que se refere às fases de candidatura.
-
-+ candidatar-me * curso *
-- Pode encontrar informações sobre cursos disponíveis, prazos de candidatura e condições de acesso em http://www.uc.pt/candidatos/escola sendo esta informação atualizada em cada ano nomeadamente no que se refere às fases de candidatura.
-
-+ * matricula *
++ [*](matricula|matricular)[*]
 - O processo de matriculação é feito no inforestudante.\nPara mais informações consulta:\nhttp://www.uc.pt/academicos/inscricoes/docs/manual_inscricoes
 
-+ * matricular *
-- O processo de matriculação é feito no inforestudante.\nPara mais informações consulta:\nhttp://www.uc.pt/academicos/inscricoes/docs/manual_inscricoes
-
-+ * matricula
-- O processo de matriculação é feito no inforestudante.\nPara mais informações consulta:\nhttp://www.uc.pt/academicos/inscricoes/docs/manual_inscricoes
-
-+ * matricular
-- O processo de matriculação é feito no inforestudante.\nPara mais informações consulta:\nhttp://www.uc.pt/academicos/inscricoes/docs/manual_inscricoes
-
-+ * inscrever * pagamento
++ * (inscrever|inscrever-me) * (pagar|pagamento)
 - Para se inscrever existe uma taxa de 20 euros.
 
-+ * inscrever-me * pagamento
-- Para se inscrever existe uma taxa de 20 euros.
++ * integral * maximo ECTS
+- Quando se está inscrito pela 1.ª vez o limite máximo de ECTS é 60. Quando inscrito no ensino superior pela segunda ou mais vezes, o estudante pode inscrever-se em unidades curriculares em que se encontra e dos anos anteriores, perfazendo até um limite máximo de 60+24 ECTS, ou seja 84 ECTS.
 
-+ * inscrever * pagar
-- Para se inscrever existe uma taxa de 20 euros.
++ * integral maximo ECTS
+- Quando se está inscrito pela 1.ª vez o limite máximo de ECTS é 60. Quando inscrito no ensino superior pela segunda ou mais vezes, o estudante pode inscrever-se em unidades curriculares em que se encontra e dos anos anteriores, perfazendo até um limite máximo de 60+24 ECTS, ou seja 84 ECTS.
 
-+ * inscrever-me* pagar
-- Para se inscrever existe uma taxa de 20 euros.
++ * integral * maximo * ECTS
+- Quando se está inscrito pela 1.ª vez o limite máximo de ECTS é 60. Quando inscrito no ensino superior pela segunda ou mais vezes, o estudante pode inscrever-se em unidades curriculares em que se encontra e dos anos anteriores, perfazendo até um limite máximo de 60+24 ECTS, ou seja 84 ECTS.
 
+
++ * integral maximo * ECTS
+- Quando se está inscrito pela 1.ª vez o limite máximo de ECTS é 60. Quando inscrito no ensino superior pela segunda ou mais vezes, o estudante pode inscrever-se em unidades curriculares em que se encontra e dos anos anteriores, perfazendo até um limite máximo de 60+24 ECTS, ou seja 84 ECTS.
+
++ * inscrever * parcial
+- Sim. No ato de inscrição, pode optar pelo regime a tempo parcial inscrevendo-se apenas a uma parte dos créditos anuais/semestrais previstos, correspondendo a um pagamento de apenas uma parte das propinas. Para mais informações consulte : https://www.uc.pt/academicos/FAQs
+
++ * inscrever-me * parcial
+- Sim. No ato de inscrição, pode optar pelo regime a tempo parcial inscrevendo-se apenas a uma parte dos créditos anuais/semestrais previstos, correspondendo a um pagamento de apenas uma parte das propinas. Para mais informações consulte : https://www.uc.pt/academicos/FAQs
+
++ * inscrever * parcial
+- Sim. No ato de inscrição, pode optar pelo regime a tempo parcial inscrevendo-se apenas a uma parte dos créditos anuais/semestrais previstos, correspondendo a um pagamento de apenas uma parte das propinas. Para mais informações consulte : https://www.uc.pt/academicos/FAQs
+
++ * inscrever-me* parcial
+- Sim. No ato de inscrição, pode optar pelo regime a tempo parcial inscrevendo-se apenas a uma parte dos créditos anuais/semestrais previstos, correspondendo a um pagamento de apenas uma parte das propinas. Para mais informações consulte : https://www.uc.pt/academicos/FAQs
+
++ * parcial * maximo * ECTS
+- Pode estar inscrito no máximo até 30 ECTS por ano ou 15 por semestre.
+
++ * maximo * ECTS * parcial
+- Pode estar inscrito no máximo até 30 ECTS por ano ou 15 por semestre.
+
++ * usufruir * trabalhador-estudante
+- Se é trabalhador por conta de outrem; Se está inscrito no Centro de Emprego; Se é trabalhador independente.
+
++ * usufruir * trabalhador-estudante *
+- Se é trabalhador por conta de outrem; Se está inscrito no Centro de Emprego; Se é trabalhador independente.
+
+
++ * ter * trabalhador-estudante
+- Se é trabalhador por conta de outrem; Se está inscrito no Centro de Emprego; Se é trabalhador independente.
+
++ * ter * trabalhador-estudante *
+- Se é trabalhador por conta de outrem; Se está inscrito no Centro de Emprego; Se é trabalhador independente.
+
++ * adquirir * trabalhador-estudante
+- Se é trabalhador por conta de outrem; Se está inscrito no Centro de Emprego; Se é trabalhador independente.
+
++ * adquirir * trabalhador-estudante *
+- Se é trabalhador por conta de outrem; Se está inscrito no Centro de Emprego; Se é trabalhador independente.
+
++ como * trabalhador-estudante
+- Para requerer este estatuto deverá apresentar no Serviço de Gestão Académica da UC os seguintes documentos: Comprovativo de inscrição na segurança social (ou regime similar) caso seja trabalhador por conta de outrem; Fazer prova de que se encontra em situação de desemprego involuntário - se estiver inscrito no Centro de Emprego; Declaração de início de atividade no caso de trabalhadores independentes.
+
++ como * trabalhador-estudante *
+- Para requerer este estatuto deverá apresentar no Serviço de Gestão Académica da UC os seguintes documentos: Comprovativo de inscrição na segurança social (ou regime similar) caso seja trabalhador por conta de outrem; Fazer prova de que se encontra em situação de desemprego involuntário - se estiver inscrito no Centro de Emprego; Declaração de início de atividade no caso de trabalhadores independentes.
+
++ * requerer * trabalhador-estudante
+- Para requerer este estatuto deverá apresentar no Serviço de Gestão Académica da UC os seguintes documentos: Comprovativo de inscrição na segurança social (ou regime similar) caso seja trabalhador por conta de outrem; Fazer prova de que se encontra em situação de desemprego involuntário - se estiver inscrito no Centro de Emprego; Declaração de início de atividade no caso de trabalhadores independentes.
+
++ * requerer * trabalhador-estudante *
+- Para requerer este estatuto deverá apresentar no Serviço de Gestão Académica da UC os seguintes documentos: Comprovativo de inscrição na segurança social (ou regime similar) caso seja trabalhador por conta de outrem; Fazer prova de que se encontra em situação de desemprego involuntário - se estiver inscrito no Centro de Emprego; Declaração de início de atividade no caso de trabalhadores independentes.
+
++ quando * trabalhador-estudante
+- A solicitação do estatuto de trabalhador-estudante deve ser feita no ato de inscrição e até ao prazo máximo de 15 de outubro, ou até ao prazo máximo de 15 dias úteis após a inscrição no ano letivo, caso a mesma seja efetuada em data posterior.
+
++ * quando * trabalhador-estudante
+- A solicitação do estatuto de trabalhador-estudante deve ser feita no ato de inscrição e até ao prazo máximo de 15 de outubro, ou até ao prazo máximo de 15 dias úteis após a inscrição no ano letivo, caso a mesma seja efetuada em data posterior.
+
++ quando * trabalhador-estudante *
+- A solicitação do estatuto de trabalhador-estudante deve ser feita no ato de inscrição e até ao prazo máximo de 15 de outubro, ou até ao prazo máximo de 15 dias úteis após a inscrição no ano letivo, caso a mesma seja efetuada em data posterior.
+
++ * quando * trabalhador-estudante *
+- A solicitação do estatuto de trabalhador-estudante deve ser feita no ato de inscrição e até ao prazo máximo de 15 de outubro, ou até ao prazo máximo de 15 dias úteis após a inscrição no ano letivo, caso a mesma seja efetuada em data posterior.
+
++ posso * trabalhador-estudante * segundo semestre
+- Sim, apenas no 2.º semestre. Para tal terá que solicitar e apresentar a documentação até 28 de fevereiro.
+
++ posso * trabalhador-estudante * 2o semestre
+- Sim, apenas no 2.º semestre. Para tal terá que solicitar e apresentar a documentação até 28 de fevereiro.
+
++ posso * trabalhador-estudante * 2º semestre
+- Sim, apenas no 2.º semestre. Para tal terá que solicitar e apresentar a documentação até 28 de fevereiro.
+
++ posso * trabalhador-estudante * 2.º semestre
+- Sim, apenas no 2.º semestre. Para tal terá que solicitar e apresentar a documentação até 28 de fevereiro.
+
++ posso * trabalhador-estudante * segundo semestre *
+- Sim, apenas no 2.º semestre. Para tal terá que solicitar e apresentar a documentação até 28 de fevereiro.
+
++ posso * trabalhador-estudante * 2o semestre *
+- Sim, apenas no 2.º semestre. Para tal terá que solicitar e apresentar a documentação até 28 de fevereiro.
+
++ posso * trabalhador-estudante * 2º semestre *
+- Sim, apenas no 2.º semestre. Para tal terá que solicitar e apresentar a documentação até 28 de fevereiro.
+
++ posso * trabalhador-estudante * 2.º semestre *
+- Sim, apenas no 2.º semestre. Para tal terá que solicitar e apresentar a documentação até 28 de fevereiro.
 
 
 
