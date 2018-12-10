@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, rootDataDir.toString());
 
         //Inicializar bot para responder ao utilizador
-        bot = new RiveScript(Config.utf8());
+        bot = new RiveScript(Config.newBuilder().utf8(true).unicodePunctuation("[.,!?;:]").build());
         //bot.loadDirectory("com/pgi/uchat/"); //Diretoria não encontrada não importa o que eu ponha ??
         //bot.loadDirectory(rootDataDir);
         bot.loadFile(rootDataDir+"/salvador.rive");
@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
                 messageToSend.getText().clear();
                 newMessage(auxMes, true);
                 String reply = bot.reply("Salvador", auxMes);
+                if(reply.contains(":)") || reply.contains("#")) reply = Checker(reply);
                 newMessage(reply, false);
                 if(reply.contains(":)"))
                     sendMessagetoDatabase(reply);
@@ -155,8 +156,6 @@ public class MainActivity extends AppCompatActivity {
         Message message = new Message(msg,user,data);
         messageAdapter.add(message);
         campoMensagens.setSelection(campoMensagens.getCount() -1);
-
-
     }
 
     private String getRandomColor() {
@@ -229,6 +228,24 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+    protected String Checker(String msg) {
+        if(msg.contains("#")) {
+            if (msg.compareTo("#01") == 0)
+                msg = "https://www.youtube.com/watch?v=Hf0lmtOqKeQ";
+            else if (msg.compareTo("#02") == 0)
+                msg = "Beijo para ti também sexy <3";
+        }
+
+        else{
+            String[] aux = msg.split(" ");
+            if(aux[aux.length-1].compareTo(":)") == 0){
+                //Send_To_Admin
+            }
+        }
+        return msg;
+    }
+
     private void copyFile(InputStream in, OutputStream out) throws IOException {
         byte[] buffer = new byte[1024];
         int read;

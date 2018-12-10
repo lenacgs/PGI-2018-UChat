@@ -1,99 +1,325 @@
 ! version = 2.0
 
 //FAQ por terminar http://www.uc.pt/fpce/estudantes/informacoes/faq/geral
-//------------------------------------------------Saudações
+//------------------------------------------------Saudações-----------------------------------------
 
-+ ola
-- Ola! \nO meu nome é Salvador, sou um bot programado para responder a qualquer questão que tenhas sobre a Universidade de Coimbra!
++ [*](ola|hello|boas)[*]
+- Olá! \nO meu nome é Salvador, sou um bot programado para responder a qualquer questão que tenhas sobre a Universidade de Coimbra!
 
-+ adeus
++ [*](adeus|xau)[*]
 - Adeus! Foi um prazer falar contigo!
 
-//---------------------------------------Perguntas relacionadas com o NONIO
+//---------------------------------------Perguntas relacionadas com o NONIO-------------------------
 
-
-+ o que e * nonio
++ o que e * nonio[*]
 - O NONIO (Novo sistema Académico Universitário) é uma plataforma informática que pretende abranger toda a informação relacionada com a gestão académica da Universidade. 
 
-+ o que e * nonio *
-- O NONIO (Novo sistema Académico Universitário) é uma plataforma informática que pretende abranger toda a informação relacionada com a gestão académica da Universidade. 
-
-+ como * nonio
++ como * nonio[*]
 - O acesso ao NONIO é feito através da internet https://inforestudante.uc.pt/nonio/security/init.do e é restrito a estudantes autenticados por utilizador e password.
 
 + O que * utilizador
 - No campo “utilizador” terá que introduzir o seu número de estudante. 
 
-+ esqueci * password
++ (esqueci|esqueci-me) * password[*]
 - Se tem e-mail oficial confirmado pode fazer a recuperação da password através do link existente na página “Esqueceu-se da palavra-chave?”
 
 
 
-//---------------------------------------Direitos e deveres do estudante
+//---------------------------------------Direitos e deveres do estudante----------------------------
 
-+ onde * direitos * estudante
++ onde * (direitos|deveres) * estudante[*]
 - - Proceder à leitura dos documentos e normativos que pretendem assegurar a transparência e uniformidade da relação pedagógica, nomeadamente, o Regulamento de Direitos Especiais dos Estudantes da Universidade de Coimbra - Regulamento n.º 597/2011 - 02 de abril de 2012.\n- Recorrer ao Provedor do Estudante.\n- Mais informação consultar: http://www.uc.pt/academicos/regulamentos
 
-+ onde * direitos * estudante
-- - Proceder à leitura dos documentos e normativos que pretendem assegurar a transparência e uniformidade da relação pedagógica, nomeadamente, o Regulamento de Direitos Especiais dos Estudantes da Universidade de Coimbra - Regulamento n.º 597/2011 - 02 de abril de 2012.\n- Recorrer ao Provedor do Estudante.\n- Mais informação consultar: http://www.uc.pt/academicos/regulamentos
-
-+ * plagio *
++ [*]plagio[*]
 - A fraude, cópia ou plágio cometidos em qualquer prova de avaliação de uma unidade curricular poderão levar à suspensão da avaliação escolar do estudante durante o período de um ano, bem como à suspensão das suas atividades escolares por um período temporário.\nPodes consultar: http://www.uc.pt/academicos/regulamentos/docs_uc/regulamento_disciplinar
 
-+ plagio *
-- A fraude, cópia ou plágio cometidos em qualquer prova de avaliação de uma unidade curricular poderão levar à suspensão da avaliação escolar do estudante durante o período de um ano, bem como à suspensão das suas atividades escolares por um período temporário.\nPodes consultar: http://www.uc.pt/academicos/regulamentos/docs_uc/regulamento_disciplinar
 
-+ * plagio
-- A fraude, cópia ou plágio cometidos em qualquer prova de avaliação de uma unidade curricular poderão levar à suspensão da avaliação escolar do estudante durante o período de um ano, bem como à suspensão das suas atividades escolares por um período temporário.\nPodes consultar: http://www.uc.pt/academicos/regulamentos/docs_uc/regulamento_disciplinar
+//----------------------------------------Sobre a Candidaturo/Matriculas----------------------------
 
-+ plagio
-- A fraude, cópia ou plágio cometidos em qualquer prova de avaliação de uma unidade curricular poderão levar à suspensão da avaliação escolar do estudante durante o período de um ano, bem como à suspensão das suas atividades escolares por um período temporário.\nPodes consultar: http://www.uc.pt/academicos/regulamentos/docs_uc/regulamento_disciplinar
-
-//--------------------------------------- Sobre a Universidade (ainda não está começado)
-
-+ * candidatar * curso *
++ [*](candidatar|candidatar-me) * curso *
 - Pode encontrar informações sobre cursos disponíveis, prazos de candidatura e condições de acesso em http://www.uc.pt/candidatos/escola sendo esta informação atualizada em cada ano nomeadamente no que se refere às fases de candidatura.
 
-+ candidatar * curso *
-- Pode encontrar informações sobre cursos disponíveis, prazos de candidatura e condições de acesso em http://www.uc.pt/candidatos/escola sendo esta informação atualizada em cada ano nomeadamente no que se refere às fases de candidatura.
-
-+ * candidatar-me * curso *
-- Pode encontrar informações sobre cursos disponíveis, prazos de candidatura e condições de acesso em http://www.uc.pt/candidatos/escola sendo esta informação atualizada em cada ano nomeadamente no que se refere às fases de candidatura.
-
-+ candidatar-me * curso *
-- Pode encontrar informações sobre cursos disponíveis, prazos de candidatura e condições de acesso em http://www.uc.pt/candidatos/escola sendo esta informação atualizada em cada ano nomeadamente no que se refere às fases de candidatura.
-
-+ * matricula *
++ [*](matricula|matricular)[*]
 - O processo de matriculação é feito no inforestudante.\nPara mais informações consulta:\nhttp://www.uc.pt/academicos/inscricoes/docs/manual_inscricoes
 
-+ * matricular *
-- O processo de matriculação é feito no inforestudante.\nPara mais informações consulta:\nhttp://www.uc.pt/academicos/inscricoes/docs/manual_inscricoes
-
-+ * matricula
-- O processo de matriculação é feito no inforestudante.\nPara mais informações consulta:\nhttp://www.uc.pt/academicos/inscricoes/docs/manual_inscricoes
-
-+ * matricular
-- O processo de matriculação é feito no inforestudante.\nPara mais informações consulta:\nhttp://www.uc.pt/academicos/inscricoes/docs/manual_inscricoes
-
-+ * inscrever * pagamento
++ * (inscrever|inscrever-me) * (pagar|pagamento)
 - Para se inscrever existe uma taxa de 20 euros.
 
-+ * inscrever-me * pagamento
-- Para se inscrever existe uma taxa de 20 euros.
++ * integral [*] maximo [*] ECTS
+- Quando se está inscrito pela 1.ª vez o limite máximo de ECTS é 60. Quando inscrito no ensino superior pela segunda ou mais vezes, o estudante pode inscrever-se em unidades curriculares em que se encontra e dos anos anteriores, perfazendo até um limite máximo de 60+24 ECTS, ou seja 84 ECTS.
 
-+ * inscrever * pagar
-- Para se inscrever existe uma taxa de 20 euros.
++ * (inscrever|inscrever-me) * parcial
+- Sim. No ato de inscrição, pode optar pelo regime a tempo parcial inscrevendo-se apenas a uma parte dos créditos anuais/semestrais previstos, correspondendo a um pagamento de apenas uma parte das propinas. Para mais informações consulte : https://www.uc.pt/academicos/FAQs
 
-+ * inscrever-me* pagar
-- Para se inscrever existe uma taxa de 20 euros.
++ * parcial * maximo * ECTS
+- Pode estar inscrito no máximo até 30 ECTS por ano ou 15 por semestre.
+
++ * maximo * ECTS * parcial
+- Pode estar inscrito no máximo até 30 ECTS por ano ou 15 por semestre.
+
++ * (ter|usufruir|adquirir) * trabalhador-estudante[*]
+- Se é trabalhador por conta de outrem; Se está inscrito no Centro de Emprego; Se é trabalhador independente.
+
++ [*](requerer|como) * trabalhador-estudante[*]
+- Para requerer este estatuto deverá apresentar no Serviço de Gestão Académica da UC os seguintes documentos: Comprovativo de inscrição na segurança social (ou regime similar) caso seja trabalhador por conta de outrem; Fazer prova de que se encontra em situação de desemprego involuntário - se estiver inscrito no Centro de Emprego; Declaração de início de atividade no caso de trabalhadores independentes.
+
++ [*]quando * trabalhador-estudante[*]
+- A solicitação do estatuto de trabalhador-estudante deve ser feita no ato de inscrição e até ao prazo máximo de 15 de outubro, ou até ao prazo máximo de 15 dias úteis após a inscrição no ano letivo, caso a mesma seja efetuada em data posterior.
+
++ posso * trabalhador-estudante * (segundo |2º|2o|2|2.º)semestre[*]
+- Sim, apenas no 2.º semestre. Para tal terá que solicitar e apresentar a documentação até 28 de fevereiro.
+
++ como * inscricao [*] apos [*] prazo normal[*]
+-  Se já passou o prazo da inscrição deverá dirigir-se ao atendimento presencial dos Serviços de Gestão Académica para proceder à sua inscrição. A inscrição fica sujeita ao pagamento de uma multa com o valor:\n  - nos primeiros 15 dias a seguir ao último dia do prazo – 15€\n  - nos 15 dias subsequentes e até 30 dias – 50€\n  Esta multa só pode ser paga EXCLUSIVAMENTE na Tesouraria.\nApós o pagamento da multa os serviços abrem um novo prazo para poder efetuar a sua inscrição no Inforestud@nte.
+
++ nao * inscricao * prazo normal [*]
+-  Se não fez a inscrição no prazo normal poderá fazer a mesma, porém esta fica sujeita a requerimento, e à decisão sobre o mesmo pelos órgãos da Faculdade.\n  Em caso de aceitação, a inscrição fica ainda sujeita ao pagamento da multa de 75€.\n  Mais informação consultar: http://www.uc.pt/academicos/inscricoes/alunos
+
++ [*]periodo * substituicao [*](unidade curricular|unidades curriculares)[*]
+- O aluno que pretende substituir a(s) unidade(s) curricular(es) de opção deverá fazer o pedido no Departamento Académico da Universidade de Coimbra nos 15 dias posteriores ao início do período letivo em cada semestre.\n Findo este período a alteração/substituição fica sujeita ao pagamento das taxas devidas.
+
++ [*](conseguir|consigo) [*] (inscrever|inscrever-me) * notas [*]
+- Não deve inscrever-se num ano letivo sem terminar o anterior, e portanto, tem que aguardar o lançamento das notas no Inforestudante. Posteriormente será notificado automaticamente por e-mail com o novo prazo de inscrição.\n  Para mais informações sobre inscrições: http://www.uc.pt/academicos/inscricoes\n  Nota: Depois de inscrito, o estudante pode sempre obter, a partir do Inforestudante um Certificado Multiusos comprovativo da sua inscrição no respetivo ano letivo.
+
+//------------------------------------DISCIPLINAS AVULSO--------------------------------------------
+
++ [*]o que sao * (avulsas|avulso)[*]
+- Disciplinas “avulso” são unidades curriculares de ciclos de estudos subsequentes.
+
++ [*](inscrever|inscrever-me) * (avulsas|avulso)[*]
+- Se for finalista num ciclo de estudos e pretenda efetuar inscrição em unidades curriculares de ciclos de estudo subsequentes
+
++ (qual|quantas) * (avulsas|avulso) * (inscrever-me|inscrita|inscrito)[*]
+- O número total de ECTS das unidades curriculares dos ciclos de estudos, atual e subsequente, em que o estudante se pode inscrever não pode ultrapassar os limites aplicáveis ao ciclo de estudos em que se encontra inscrito, devendo ainda observar outras limitações aplicáveis, nomeadamente precedências e prazos de inscrição.
+
++ [*]pagar [*] propina [*] adicional[*]
+- Uma inscrição em disciplinas avulsas não está sujeita ao pagamento de propina adicional
+
+//-------------------------------------PRESCRIÇÃO---------------------------------------------------
+
++ [*]o que[*]prescricao[*]
+- Impedimento, por falta de aproveitamento escolar, de realização de uma nova inscrição.
+
++ [*]quando[*]prescricao[*]
+- Não podem inscrever-se em ciclos de estudos da Universidade de Coimbra os estudantes que não cumpram os critérios de aproveitamento escolar fixados artigo 3.º do Regulamento n.º 248/2012 de 06 de julho de 2012
+
++ [*]risco[*](prescricao|prescrever)[*]
+- O estudante dispõe de informação atualizada no Inforestudante sobre o seu percurso escolar e sobre a possibilidade, ou não, de prescrever, com indicação dos ECTS realizados e dos que deve realizar para que não ocorra a prescrição.
+
++ [*]quanto * (impedida|impedido)[*]curso[*]
+- Por um período de dois semestres consecutivos.
+
++ [*]prescricao * ECTS * Mestrado Integrado[*]
+- O número de ECTS para efeitos de prescrição é calculado a partir dos ECTS necessários à conclusão do grau de licenciado.
+
++ [*]Apos * prescricao * (inscrever|inscrever-me)[*]
+- Por uma das seguintes vias: Reingresso; Mudança de Curso; Transferência.\n  (Consultar Artigo 6.º - Regresso ao estudo – regulamento 248/2012 - Regulamento de prescrições na Universidade de Coimbra)
+
++ [*](prescricao|prescrita|prescrito) * (ir|frequentar) * isoladas[*]
+- Mesmo prescrito pode inscrever-se em unidades curriculares isoladas ministradas por qualquer Unidade Orgânica da UC.
+
+//-------------------------------------APOIO AO ESTUDANTE-------------------------------------------
+
++ [*](bolsa|bolsa de estudo|bolsas de estudo|bolsas)[*]
+- Consulte o site https://www.uc.pt/academicos/premios_bolsas
+
++ [*](tenho bolsa|com bolsa|bolseiro) * prazo * (pagar|pagamento)[*]
+- Os estudantes bolseiros dos SAS UC devem efetuar o pagamento da propina no prazo máximo de 30 dias seguidos, contado a partir do dia seguinte àquele em que a respetiva prestação, devidamente comprovada, seja colocada à sua disposição, sendo nesse caso libertos de juros de mora.
+
++ [*](nao tenho bolsa|nao sou bolseiro|nao sendo bolseio|sem bolsa) * apoio[*]
+- Pode candidatar-se ao Fundo de Apoio Social (FAS) que é um apoio específico da UC, criado pelo Senado, para comparticipar as despesas com propinas dos estudantes não bolseiros com manifestas e comprovadas dificuldades económicas e fazer face a situações de comprovada emergência, entendidas como situações de grave risco de sobrevivência de um aluno que não possui ou deixou de possuir os meios para prover às suas necessidades básicas de alojamento, saúde e alimentação.
+
++ [*] apoio medico [*]
+- Os Serviços de Ação Social da Universidade de Coimbra disponibilizam Serviços Médicos em várias especialidades.
+
+
+//-----------------------------------------MOBILIDADE-----------------------------------------------
+
++ [*]intercambio * (estrangeira|estrangeiras)[*]
+- No caso de estar interessado (a) deve consultar:\n
+^ http://www.uc.pt/driic/mobilidade/out\n
+^ http://ec.europa.eu/education/lifelong-learning-programme/doc80_en.htm\n
+^ http://www.uc.pt/fpce/mobilidade/outgoing
+
++ [*] mobilidade * portugal [*]
+- Sim, através do Programa Almeida Garrett.\n
+^ Este programa oferece a possibilidade de efectuar um período de estudos, com pleno reconhecimento académico, numa universidade pública portuguesa.
+
++ [*] quero * mobilidade * quando * (pre inscricao|pre-inscricao)[*]
+- No ano letivo anterior ao da mobilidade, geralmente nos meses de dezembro e janeiro.
+  ﻿	﻿	﻿
+//-----------------------------------------AVALIACAO-----------------------------------------------
+
++ [*](quanto|quantos)[*]tipos[*]provas[*]
+- Para efeitos de avaliação, consideram-se as seguintes provas\n
+^      Tipo A: provas escritas (teste, frequência ou exame);\n
+^      Tipo B: trabalhos de revisão bibliográfica e trabalhos empíricos ou de campo;\n
+^      Tipo C: trabalhos práticos ou de tipo laboratorial a realizar nas aulas práticas ou teórico-práticas;\n
+^      Tipo D: provas orais ou de defesa de trabalho;\n
+^      Tipo E: trabalhos realizados no âmbito da participação em investigações enquadradas pelos docentes. Este tipo de prova deve ser acompanhado de uma proposta alternativa, decidindo o aluno da avaliação a realizar.\n
+
++ [*]qual[*]validade[*]A[*]B[*]C
+- As provas de tipo A, B e C têm validade de um ano letivo.
+
++ [*](chumbar|reprovar)[*]uma[*]provas[*]repetir todas
+- Não, terá de repetir ou reformular apenas a prova à qual não obteve a classificação mínima (40% da classificação máxima atribuída à prova). As restantes classificações positivas serão reservadas pelo período de 1 ano.
+
++ [*]quantos[*]regimes[*]avaliacao[*]
+-  Avaliação Periódica e Avaliação Final.\n
+^  A avaliação periódica: implica a realização de, pelo menos, dois tipos de provas, devendo uma delas ser de natureza individual;\n
+^  Avaliação final: realização de exame escrito presencial, que englobe toda a matéria lecionada. Neste caso a avaliação comporta, apenas, a realização de uma única prova do tipo A.
+
++ [*]optar[*]uma[*]avaliacoes[*]
+-  Sim, tem que optar até à 3.ª semana do início das aulas em cada semestre, assinando a declaração que se encontra em http://www.uc.pt/fpce/estudantes/informacoes/impressos.\n
+^  Deverá entregar a declaração preenchida e assinada ao regente da unidade curricular.
+
++ [*]nao entregar [*] declaração[*]
+- Fica automaticamente inscrito em regime de Avaliação Final.
+
++ [*]quantas[*]epocas[*]avaliacao[*]
+- Existe uma época de avaliação normal e uma época de avaliação de recurso. Em casos devidamente justificados considera-se também uma época especial e uma época extraordinária.
+
++ [*]quantas[*]recurso[*]
+- Não há limites para o número de unidades curriculares a que os alunos poderão ser avaliados.
+
++ [*]quem[*]especial?
+-Podem aceder à época especial os estudantes que se encontrem nos casos justificados previstos no artigo 4.º Regulamento de Direitos Especiais dos Estudantes da Universidade de Coimbra Regulamento n.º 597/2011 - 2 de abril de 2012, ou seja:\n
+^ a) Trabalhador -estudante;\n
+^ b) Estudante bombeiro;\n
+^ c) Estudante militar;\n
+^ d) Estudante atleta de alto rendimento;\n
+^ e) Estudante dirigente associativo jovem da UC e estudante membro de órgãos da UC;\n
+^ f) Estudante com necessidades educativas especiais;\n
+^ g) Estudante atleta da UC;\n
+^ h) Estudante integrado em atividades culturais da UC;\n
+^ i) Estudante com participação em atividades de reconhecido mérito universitário.\n
+^ Consideram -se também abrangidos outros direitos especiais decorrentes das seguintes situações:\n
+^ a) Estudante integrado em programas de mobilidade estudantil;\n
+^ b) Estudante que ingresse ou tenha sido colocado através de regimes especiais;\n
+^ c) Estudante finalista;\n
+^ d) Mãe e pai estudante;\n
+^ e) Doença;\n
+^ f) Falecimento de cônjuge ou parente;\n
+^ g) Comparência perante autoridade policial, judicial ou militar;\n
+^ h) Estudante que professe confissão religiosa cujo dia de repouso ou culto não seja ao domingo.\n
+^ O referido regulamento define para cada um destes casos as condições a observar em cada uma das circunstâncias.\n
+
++ [*]quando[*]extraordinaria[*]
+- A época extraordinária decorre após o 1º semestre, no mês de março e após o final do ano letivo, no mês de outubro.
+
++ [*]quem[*]extraordinaria[*]
+- De acordo com o Regulamento de Direitos Especiais do Estudante da UC (RDEEUC), têm acesso a esta época os estudantes nas seguintes situações:\n
+^ Art.42º - Estudante finalista\n
+^ Art.21º - Estudante dirigente associativo jovem da UC\n
+^ Art.º 16º Militares em regime de contrato e regime de voluntariado\n
+^ Art.13º- Bombeiros dos corpos profissionais, mistos ou voluntário\n
+^ Mais informações consultar:\n
+^ http://www.uc.pt/academicos/percurso/exames_extraordinarios
+
++ [*]posso[*]exame[*]nao[*]inscrito[*]
+- Para poder realizar exame, seja na época normal ou de recurso, deverá proceder obrigatoriamente à inscrição.
+
++ [*]como[*](inscrever|inscrever-me)[*]exames[*]
+- Deve inscrever-se on-line NONIO até 3 dias úteis antes da data da prova, reservando o comprovativo da referida inscrição.
+
++ [*]defesa nacional[*]
+- O Dia da Defesa Nacional visa sensibilizar os jovens para a temática da defesa nacional e divulgar o papel das Forças Armadas. A comparência é um dever militar que abrange todos os cidadãos portugueses de 18 anos de idade.\n
+^  O estudante convocado pode requerer o adiamento da comparência por diversos motivos, nos quais se inclui a realização de exame em estabelecimento de ensino oficialmente reconhecido, no próprio dia ou nos dois dias imediatamente seguintes.\n
+^  Para que lhe seja concedido o adiamento:\n
+^  · Apresentar requerimento até 5 dias depois da data para a qual foi convocado:\n
+^  · Anexar uma declaração emitida pela faculdade ou departamento onde realizou o exame para atestar e justificar esse adiamento.\n
+^  · Enviar por carta para\n
+^  Direção-Geral de Pessoal e Recrutamento Militar\n
+^  Avenida Ilha da Madeira, n.º 1, 4.º\n
+^  1400 - 204 Lisboa\n
+^  Ou pode ainda entregar no Centro de Recrutamento da sua área de residência.\n
+^  Mais informações consultar o site do Ministério da Defesa Nacional\n
+^  Para mais informações sobre esta temática consultar:\n
+^  http://www.uc.pt/academicos/regulamentos/docs_uc/RP_2013\n
+
+// -------------------------------------MELHORIAS---------------------------------------------------
+
++ [*]melhorar[*](notas|classificacoes)[*]qualquer[*]
+- Sim, no entanto, cada unidade curricular é objeto de apenas uma tentativa de melhoria.
+
++ [*]melhorar[*](notas|classificacoes)[*]
+- Poderá melhorar a classificação final de qualquer unidade curricular, requerendo uma nova prova de avaliação na época de recurso do respetivo semestre do mesmo ano letivo ou no mesmo semestre do ano letivo subsequente àquele em que tiver obtido aprovação na unidade curricular em causa, caso ela ainda se mantenha em funcionamento.
+
++ [*](quando|onde)[*]melhoria[*](notas|classificacao)[*]
+- Deve requerer obrigatoriamente a melhoria de classificação no Serviço de Gestão Académica da UC até 2 dias úteis antes da data de realização da respetiva prova.
+
++ [*](limite|limites)[*](melhorar|melhorias)[*]
+- No seu conjunto, anualmente, o número de unidades curriculares a que se inscreve para tentativa de melhoria de classificação não deverá ultrapassar 24 ECTS.
+
++ [*](reprovar|chumbar)[*](melhoria|melhorar)[*]
+- Não. A classificação final da unidade curricular será a mais elevada de entre todos os momentos de avaliação.\n
+^  Apenas em casos especiais ocorre a reprovação do estudante, como por exemplo:\n
+^  A aprovação na unidade curricular foi por avaliação periódica, o docente não garante a nota e a nota da prova de melhoria é inferior a 10.
+
++ [*]melhoria[*](pagar|pagamento)[*]
+- Se a melhoria solicitada ocorrer dentro do mesmo ano letivo, não há lugar ao pagamento de emolumentos; se solicitada no ano letivo seguinte está sujeita a pagamento nos termos da Tabela de Emolumentos da Universidade de Coimbra.
+
+// -------------------------------------PROPINAS----------------------------------------------------
+
++ quando [*] pagar [*]  propinas[*]
+- Caso queiras pagar tudo de uma vez, o prazo é até dia 31 de outubro. Se quiseres pagar de forma faseada, aplicam-se os seguintes prazos:\n1ª Prestação: 31 de outubro\n2ª Prestação: 31 de janeiro\n3ª Prestação: 31 de março\n4ª Prestação: 31 de maio
+
++ [*](nao paguei|esqueci-me de pagar)[*]propinas[*]
+- Neste caso o pagamento de propinas fica sujeito a juros de mora nos termos da legislação aplicável, sendo os estudantes informados por via eletrónica. No final do ano letivo, os estudantes em incumprimento são notificados do montante em débito, bem como dos respetivos juros de mora.
+
++ [*]se[*]nao pagar[*]propinas[*]
+- Qualquer incumprimento de pagamento das propinas implica a impossibilidade de o estudante inscrever-se no curso e em cursos da UC bem como não poderá ser emitida qualquer declaração, certidão ou informação (exceto sobre o pagamento de propinas).
+
+
+// --------------------------CONCLUSÃO DO CICLO DE ESTUDOS------------------------------------------
+
++ [*](conclusao|concluir|acabar)[*](melhoria|melhorias)[*]
+- Podes requerer a melhoria de classificação até 36 ECTS do plano de curso, das unidades curriculares que ainda não tenham sido objeto de melhoria. Neste caso, a melhoria de classificação só poderá ser efetuada no ano seguinte ao término do curso.
+
++ [*]o que e[*]suplemento do diploma[*]
+- O suplemento ao Diploma é um documento bilingue (em português e inglês), que complementa o diploma, não o substituindo. Permite a comparabilidade, facilita a mobilidade e melhora a visibilidade exterior da formação obtida.\nPara mais informações consulta: http://www.uc.pt/academicos/certidoes/suplemento
+
++ [*]documento[*](provar|comprovar)[*](terminei|acabei|finalizei)[*]curso[*]
+- Podes requerer o diploma ou carta, ambos com igual valor certificativo, tendo como diferença o aspeto e respetivo emolumento.\nPara mais informações consulta: http://www.uc.pt/academicos/certidoes/solicitar
+
++ [*](deslocar|ir)[*](obter|ter|conseguir|buscar)[*]diploma[*]
+- Não. Pode recorrer ao Inforestud@nte, através da opção “Balcão Académico>>Certidões”.\nPara mais informações consultar: http://www.uc.pt/academicos/certidoes/solicitar
 
 
 
 
 
-
-
-// Default message
+// >>>>>>>>>>>>>>>>>>>>>>>>>>> Default message
 + *
-- Peço desculpa não percebi a tua questão! :( \nA pergunta vai ser redirecionada a uma pessoa e vai te ser respondida no Futuro. Entretanto podemos continuar a falar :) 
- 
+- Não percebi! Posso não saber a resposta, mas lembra-te que para falares comigo tens que escrever corretamente porque não sei corrigir erros ortográficos :)
+- Peço desculpa não percebi a tua questão! :( \nA pergunta vai ser redirecionada a uma pessoa e vai te ser respondida no futuro. Entretanto podemos continuar a falar :)
+- Peço desculpa mas não te percebi! Vou perguntar aos meus criadores e depois respondo! Mais alguma questão? :)
+- Não percebi o que disseste... Não te preocupes, alguém vai ler a pergunta e responder-te! :)
+
+
+
+
+
+
+
+
+
+// ----------------------------------------EASTER EGG-----------------------------------------------
++ piada
+- Três pedreiros entram de férias e vão a praia pela primeira vez.\n
+^  O primeiro diz: tanta água!\n
+^  O segundo diz: tanta areia!\n
+^  Aí o terceiro diz : vamos embora antes que alguém traga o cimento!
+- Mãe, mãe, de onde viemos??\n
+^ – Filho o homem é descendente de Adão e Eva.
+^ – Mas o pai disse-me que o homem descende do macaco.
+^ – Uma coisa é a família do pai, outra coisa é a minha
+- O bêbado atravessa a rua e um carro buzina bibi…\n
+^  O bêbado olha pro carro e diz:\n
+^  – Eu também bibi, e muito!!
+
++ coracaonaotemidade
+- #01
+
++ beijo
+- #02
