@@ -4,3 +4,4 @@ UChat/.idea/misc.xml
 UChat/.idea/gradle.xml
 UChat/.idea/codeStyles/Project.xml
 UChat/.idea/caches/build_file_checksums.ser
+*.bin

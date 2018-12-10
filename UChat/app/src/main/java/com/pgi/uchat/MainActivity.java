@@ -1,13 +1,16 @@
 package com.pgi.uchat;
 
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -18,12 +21,23 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 //Livrarias RiveScript
 //https://github.com/aichaos/rivescript-java
+import com.google.auth.oauth2.GoogleCredentials;
+import com.google.cloud.firestore.Firestore;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
+import com.google.firebase.cloud.FirestoreClient;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.rivescript.Config;
 import com.rivescript.RiveScript;
+
+import static android.webkit.ConsoleMessage.MessageLevel.LOG;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -34,11 +48,29 @@ public class MainActivity extends AppCompatActivity {
     private String randomColor;
     private RiveScript bot;
 
+    //private DatabaseReference mDatabase;
+    private Firestore db;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //mDatabase = FirebaseDatabase.getInstance().getReference();
+
+        try {
+            GoogleCredentials credentials = GoogleCredentials.getApplicationDefault();
+            FirebaseOptions options = new FirebaseOptions.Builder()
+                    .setCredentials(credentials)
+                    .setProjectId("uchat-30ff9")
+                    .build();
+            FirebaseApp.initializeApp(options);
+
+            db = FirestoreClient.getFirestore();
+        }
+        catch (IOException eo){
+            Log.e(TAG, "Error: " + eo.toString());
+        }
         copyAssets();
 
         //randomColor = getRandomColor();
@@ -61,9 +93,8 @@ public class MainActivity extends AppCompatActivity {
         campoMensagens.setAdapter(messageAdapter);
 
         messageToSend = (EditText) findViewById(R.id.MessageToSend);
+
         ImageButton sendButton = (ImageButton) findViewById(R.id.sendButton);
-
-
         sendButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 String auxMes = messageToSend.getText().toString();
@@ -71,10 +102,45 @@ public class MainActivity extends AppCompatActivity {
                 newMessage(auxMes, true);
                 String reply = bot.reply("Salvador", auxMes);
                 newMessage(reply, false);
+                if(reply.contains(":)"))
+                    sendMessagetoDatabase(reply);
             }
         });
 
-        newMessage("Para começares uma nova conversa envia: Olá Salvador", false);
+        newMessage("Para começares uma nova conversa envia: Ola", false);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    protected void sendMessagetoDatabase(String question){
+        Long tsLong = System.currentTimeMillis()/1000;
+        String ts = tsLong.toString();
+
+
+        /*
+        String key = mDatabase.child("posts").push().getKey();
+
+        Map<String, Object> result = new HashMap<>();
+        result.put("Data",ts);
+        result.put("Pergunta",question);
+        result.put("Resposta","");
+        result.put("user", "");
+
+
+        Map<String, Object> childUpdates = new HashMap<>();
+        childUpdates.put("/Perguntas/" + "1", result);
+
+        mDatabase.updateChildren(childUpdates);
+        */
+
     }
 
     protected void newMessage(String msg, Boolean user) {
@@ -115,13 +181,15 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        switch (id) {
+        Intent intent;
+        switch (item.getItemId()) {
             case (R.id.item1):
-
+                intent = new Intent(this, PerguntasActivity.class);
+                startActivity(intent);
                 return true;
-            case (R.id.item2):
-
+            case (R.id.about):
+                intent = new Intent(this, AboutActivity.class);
+                startActivity(intent);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

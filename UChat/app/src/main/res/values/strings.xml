@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">UChat</string>
+    <string name="about">Sobre nós</string>
+    <string name="about_text">Olá! Somos cinco estudantes da Universidade de Coimbra e, como tu, sabemos as dificuldades que existem neste mundo tão novo e cheio de novidades que é a universidade! Como somos de Engenharia Informática e no âmbito da cadeira de Processos de Gestão e de Inovação decidimos desenvolver a aplicação UChat para ajudar-te a ultrapassar as tuas dúvidas e problemas!</string>
+    <string name="team">Equipa constituida por:\nJoão Almeida\nJoão Silva\nMadalena Santos\nPedro Nunes\nRafael Neves</string>
+    <string name="contact">Não hesites em entrar em contacto connosco através do nosso email:</string>
+    <string name="email">botuchat@gmail.com</string>
 </resources>

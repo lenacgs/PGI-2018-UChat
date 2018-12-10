@@ -5,8 +5,8 @@
 
     <item
         android:id="@+id/item1"
-        android:title="Perguntas Pendentes"/>
+        android:title="Novas Perguntas" />
     <item
-        android:id="@+id/item2"
+        android:id="@+id/about"
         android:title="Sobre Nós"/>
 </menu>
