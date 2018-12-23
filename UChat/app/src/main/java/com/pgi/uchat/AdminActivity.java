@@ -10,20 +10,90 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class AdminActivity extends AppCompatActivity {
     private String TAG = "AdminActivity";
-    Button loginbutton;
+    private int index = 0;
+    Button Ignorebutton, Passbutton, Submitbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
-
+        setContentView(R.layout.admin_main);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
+
+        SetQuestion();
+
+        Ignorebutton = (Button) findViewById(R.id.ignore);
+        Ignorebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                next();
+            }
+            public void next(){
+                TextView pergunta = (TextView)findViewById(R.id.pergunta);
+                TextView resposta = (TextView)findViewById(R.id.resposta);
+                TextView field1 = (TextView)findViewById(R.id.plus_tag);
+                TextView field2 = (TextView)findViewById(R.id.minus_tag);
+
+                pergunta.setText("Pergunta nº" + index);
+                resposta.setText("");
+                field1.setText("+");
+                field2.setText("-");
+
+                index++;
+
+                Toast.makeText(AdminActivity.this,"Pergunta eliminada",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Passbutton = (Button) findViewById(R.id.pass);
+        Passbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                next();
+            }
+            public void next(){
+                TextView pergunta = (TextView)findViewById(R.id.pergunta);
+                TextView resposta = (TextView)findViewById(R.id.resposta);
+                TextView field1 = (TextView)findViewById(R.id.plus_tag);
+                TextView field2 = (TextView)findViewById(R.id.minus_tag);
+
+                pergunta.setText("Pergunta nº" + index);
+                resposta.setText("");
+                field1.setText("+");
+                field2.setText("-");
+
+                index++;
+            }
+        });
+
+        Submitbutton = (Button) findViewById(R.id.submit);
+        Submitbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                next();
+            }
+            public void next(){
+                TextView pergunta = (TextView)findViewById(R.id.pergunta);
+                TextView resposta = (TextView)findViewById(R.id.resposta);
+                TextView field1 = (TextView)findViewById(R.id.plus_tag);
+                TextView field2 = (TextView)findViewById(R.id.minus_tag);
+
+                pergunta.setText("Pergunta nº" + index);
+                resposta.setText("");
+                field1.setText("+");
+                field2.setText("-");
+
+                index++;
+
+                Toast.makeText(AdminActivity.this,"Pergunta respondida",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
@@ -45,16 +115,9 @@ public class AdminActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case (R.id.submit):
-                TextView userField = (TextView)findViewById(R.id.username);
-                EditText passField = (EditText)findViewById(R.id.password);
-                if(userField.equals("pgiteste") && passField.equals("teste")) {
-                    Intent intent = new Intent(this, AdminActivity.class);
-                    startActivity(intent);
-                }
-        }
-
+    public void SetQuestion(){
+        TextView pergunta = (TextView)findViewById(R.id.pergunta);
+        pergunta.setText("Pergunta nº" + index);
+        index++;
     }
 }
