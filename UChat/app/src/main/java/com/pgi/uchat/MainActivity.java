@@ -1,79 +1,200 @@
 package com.pgi.uchat;
 
+import android.Manifest;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Environment;
+import android.provider.Settings;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.format.DateFormat;
 import android.util.Log;
-import android.view.KeyEvent;
+
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
+
 import android.widget.EditText;
+
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.text.Normalizer;
+import java.util.Calendar;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Random;
 
-//Livrarias RiveScript
-//https://github.com/aichaos/rivescript-java
-import com.google.auth.oauth2.GoogleCredentials;
-import com.google.cloud.firestore.Firestore;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.FirebaseOptions;
-import com.google.firebase.cloud.FirestoreClient;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.storage.FileDownloadTask;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 import com.rivescript.Config;
 import com.rivescript.RiveScript;
 
-import static android.webkit.ConsoleMessage.MessageLevel.LOG;
 
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ActivityCompat.OnRequestPermissionsResultCallback{
     private String TAG = "MainActivity";
     private ListView campoMensagens;
     private EditText messageToSend;
     private MessageAdapter messageAdapter;
     private String randomColor;
     private RiveScript bot;
+    private Boolean notExist = false;
 
-    //private DatabaseReference mDatabase;
-    private Firestore db;
+    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference mDatabase;
+    private String deviceToken;
+    private StorageReference mStorageRef;
+
+    int PERMISSION_ALL = 1;
+    String[] PERMISSIONS = {
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.INTERNET,
+            Manifest.permission.ACCESS_NETWORK_STATE
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //mDatabase = FirebaseDatabase.getInstance().getReference();
+        int MyVersion = Build.VERSION.SDK_INT;
+        if (MyVersion >= Build.VERSION_CODES.M) {
 
-        try {
-            GoogleCredentials credentials = GoogleCredentials.getApplicationDefault();
-            FirebaseOptions options = new FirebaseOptions.Builder()
-                    .setCredentials(credentials)
-                    .setProjectId("uchat-30ff9")
-                    .build();
-            FirebaseApp.initializeApp(options);
-
-            db = FirestoreClient.getFirestore();
+            if (!hasPermissions(this, PERMISSIONS)) {
+                ActivityCompat.requestPermissions(this, PERMISSIONS, PERMISSION_ALL);
+            } else {
+                continueProgram();
+            }
         }
-        catch (IOException eo){
-            Log.e(TAG, "Error: " + eo.toString());
+        else
+        {
+            continueProgram();
         }
-        copyAssets();
+    }
 
-        //randomColor = getRandomColor();
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+
+        boolean allGranted=true;
+
+        for (int i = 0, len = permissions.length; i < len; i++) {
+            if (grantResults[i] == PackageManager.PERMISSION_DENIED) {
+                allGranted = false;
+            }
+        }
+        if(allGranted) {
+
+            Toast.makeText(getApplicationContext(),getString(R.string.permission_allgranted),
+                    Toast.LENGTH_SHORT).show();
+            continueProgram();
+        }
+        else {
+            displayTwoButtonsDialog(DialogTwoButtons.TYPE_CONFIRM_PERMISSIONS,
+                    R.string.attention, R.string.permission_message,
+                    R.string.settings, R.string.btn_exit);
+        }
+    }
+
+    public static boolean hasPermissions(Context context, String... permissions) {
+        if (context != null && permissions != null) {
+            for (String permission : permissions) {
+                if (ActivityCompat.checkSelfPermission(context, permission) != PackageManager.PERMISSION_GRANTED) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    private void displayTwoButtonsDialog(int type, int title, int message,
+                                         int buttonPos, int buttonNeg) {
+        DialogFragment dFragment = DialogTwoButtons.newInstance(type, title,
+                message, buttonPos, buttonNeg);
+        dFragment.setCancelable(false);
+        dFragment.show(getSupportFragmentManager(), "twoButtonsDialog");
+    }
+
+    public boolean isOnline() {
+        ConnectivityManager connMgr = (ConnectivityManager)
+                getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+        return (networkInfo != null && networkInfo.isConnected());
+    }
+
+    public void continueProgram(){
+        if(isOnline()) {
+            mDatabase = FirebaseDatabase.getInstance().getReference();
+            deviceToken = FirebaseInstanceId.getInstance().getToken();
+            mStorageRef = FirebaseStorage.getInstance().getReference();
+
+            Log.e(TAG, "deviceToken = " + deviceToken);
+
+            File outFile = new File(getExternalFilesDir(null) + "/Documents");
+            if (!outFile.exists()) {
+                notExist = true;
+                outFile.mkdirs();
+            }
+
+            StorageReference riversRef = mStorageRef.child("bot/salvador.rive");
+            File downloadFile = new File(getExternalFilesDir(null) + "/Documents/salvador.rive");
+
+
+            riversRef.getFile(downloadFile)
+                    .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            Log.e(TAG, "SUCCESS");
+                            chargeBoot();
+                            // Successfully downloaded data to local file
+                            // ...
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception exception) {
+                    Log.e(TAG, "Error");
+                    if (notExist) {
+                        Log.v(TAG, "Carrega ficheiro inicial");
+                        copyAssets();
+                        chargeBoot();
+                    } else {
+                        Log.v(TAG, "Aproveita ultimo ficheiro");
+                        chargeBoot();
+                    }
+
+                }
+            });
+        }
+        else {
+            showDialog();
+        }
+    }
+
+    public void chargeBoot(){
         randomColor = "#1a70c5";
 
         File rootDataDir = getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS);
@@ -86,7 +207,7 @@ public class MainActivity extends AppCompatActivity {
         bot = new RiveScript(Config.newBuilder().utf8(true).unicodePunctuation("[.,!?;:]").build());
         //bot.loadDirectory("com/pgi/uchat/"); //Diretoria não encontrada não importa o que eu ponha ??
         //bot.loadDirectory(rootDataDir);
-        bot.loadFile(rootDataDir+"/salvador.rive");
+        bot.loadFile(rootDataDir + "/salvador.rive");
         bot = Start(bot);
         messageAdapter = new MessageAdapter(this);
         campoMensagens = (ListView) findViewById(R.id.ScrollMensagens);
@@ -100,11 +221,13 @@ public class MainActivity extends AppCompatActivity {
                 String auxMes = messageToSend.getText().toString();
                 messageToSend.getText().clear();
                 newMessage(auxMes, true);
-                String reply = bot.reply("Salvador", auxMes);
-                if(reply.contains(":)") || reply.contains("#")) reply = Checker(reply);
+                String s = Normalizer.normalize(auxMes, Normalizer.Form.NFD);
+                s = s.replaceAll("[\\p{InCombiningDiacriticalMarks}]", "");
+                String reply = bot.reply("Salvador", s);
+                if (reply.contains("#")) reply = Checker(reply);
                 newMessage(reply, false);
-                if(reply.contains(":)"))
-                    sendMessagetoDatabase(reply);
+                if (reply.contains(":)"))
+                    sendMessagetoDatabase(auxMes);
             }
         });
 
@@ -123,25 +246,34 @@ public class MainActivity extends AppCompatActivity {
 
     protected void sendMessagetoDatabase(String question){
         Long tsLong = System.currentTimeMillis()/1000;
-        String ts = tsLong.toString();
+        //String ts = tsLong.toString();
 
+        Calendar cal = Calendar.getInstance(Locale.ENGLISH);
+        cal.setTimeInMillis(tsLong * 1000L);
+        String date = DateFormat.format("dd-MM-yyyy HH:mm:ss", cal).toString();
 
-        /*
         String key = mDatabase.child("posts").push().getKey();
 
+        Map<String, Object> result = new HashMap<>();
+        result.put("Data",date);
+        result.put("Pergunta",question);
+        result.put("Resposta","");
+        result.put("user", deviceToken);
+
+        mDatabase.child("posts").child(key).setValue(result);
+
+        /*
         Map<String, Object> result = new HashMap<>();
         result.put("Data",ts);
         result.put("Pergunta",question);
         result.put("Resposta","");
         result.put("user", "");
-
-
-        Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/Perguntas/" + "1", result);
-
-        mDatabase.updateChildren(childUpdates);
         */
 
+       // Map<String, Object> childUpdates = new HashMap<>();
+        //childUpdates.put("/Perguntas/" + "1", result);
+
+        //mDatabase.updateChildren(childUpdates);
     }
 
     protected void newMessage(String msg, Boolean user) {
@@ -230,19 +362,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected String Checker(String msg) {
-        if(msg.contains("#")) {
-            if (msg.compareTo("#01") == 0)
-                msg = "https://www.youtube.com/watch?v=Hf0lmtOqKeQ";
-            else if (msg.compareTo("#02") == 0)
-                msg = "Beijo para ti também sexy <3";
-        }
 
-        else{
-            String[] aux = msg.split(" ");
-            if(aux[aux.length-1].compareTo(":)") == 0){
-                //Send_To_Admin
-            }
-        }
+        if (msg.compareTo("#01") == 0)
+            msg = "https://www.youtube.com/watch?v=Hf0lmtOqKeQ";
+        else if (msg.compareTo("#02") == 0)
+            msg = "Beijo para ti também sexy <3";
         return msg;
     }
 
@@ -252,6 +376,26 @@ public class MainActivity extends AppCompatActivity {
         while((read = in.read(buffer)) != -1){
             out.write(buffer, 0, read);
         }
+    }
+
+    private void showDialog()
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Ligar WIFI ou Sair")
+                .setCancelable(false)
+                .setPositiveButton("Ligar WIFI", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        startActivity(new Intent(Settings.ACTION_WIFI_SETTINGS));
+                    }
+                })
+                .setNegativeButton("Sair", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        finish();
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.setCancelable(false);
+        alert.show();
     }
 }
 

@@ -5,4 +5,9 @@
     <string name="team">Equipa constituida por:\nJoão Almeida\nJoão Silva\nMadalena Santos\nPedro Nunes\nRafael Neves</string>
     <string name="contact">Não hesites em entrar em contacto connosco através do nosso email:</string>
     <string name="email">botuchat@gmail.com</string>
+    <string name="attention">Atenção!</string>
+    <string name="permission_message">Por favor ative todas as permissões necessárias para dar continuidade à aplicação!</string>
+    <string name="settings">Definições</string>
+    <string name="btn_exit">Sair</string>
+    <string name="permission_allgranted">Permissões concedidas</string>
 </resources>

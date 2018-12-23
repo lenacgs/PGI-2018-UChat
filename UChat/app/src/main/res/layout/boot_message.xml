@@ -40,6 +40,7 @@
         android:paddingRight="10dp"
         android:elevation="2dp"
         android:textSize="15sp"
+        android:autoLink="web"
         android:text="How are you doing? This is a long message that should probably wrap."
         />
 </RelativeLayout>
