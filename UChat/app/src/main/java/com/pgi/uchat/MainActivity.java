@@ -7,6 +7,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
@@ -64,6 +66,7 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
     private String randomColor;
     private RiveScript bot;
     private Boolean notExist = false;
+    private Boolean dark = false;
 
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference mDatabase;
@@ -196,7 +199,6 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
 
     public void chargeBoot(){
         randomColor = "#1a70c5";
-
         File rootDataDir = getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS);
 
         //File rootDataDir = this.getFilesDir();
@@ -218,16 +220,20 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
         ImageButton sendButton = (ImageButton) findViewById(R.id.sendButton);
         sendButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                Boolean command = false;
                 String auxMes = messageToSend.getText().toString();
                 messageToSend.getText().clear();
-                newMessage(auxMes, true);
-                String s = Normalizer.normalize(auxMes, Normalizer.Form.NFD);
-                s = s.replaceAll("[\\p{InCombiningDiacriticalMarks}]", "");
-                String reply = bot.reply("Salvador", s);
-                if (reply.contains("#")) reply = Checker(reply);
-                newMessage(reply, false);
-                if (reply.contains(":)"))
-                    sendMessagetoDatabase(auxMes);
+                if(auxMes.contains("/")) command = Commands(auxMes); //Check command
+                if(!command) {
+                    newMessage(auxMes, true);
+                    String s = Normalizer.normalize(auxMes, Normalizer.Form.NFD);
+                    s = s.replaceAll("[\\p{InCombiningDiacriticalMarks}]", "");
+                    String reply = bot.reply("Salvador", s);
+                    if (reply.contains("#")) reply = Checker(reply);
+                    newMessage(reply, false);
+                    if (reply.contains(":)"))
+                        sendMessagetoDatabase(auxMes);
+                }
             }
         });
 
@@ -298,12 +304,14 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
         }
         return sb.toString().substring(0, 7);
     }
+
     protected RiveScript Start(RiveScript bot) {
         bot.setSubstitution("oi","ola" );
         bot.setSubstitution("olá","ola" );
         bot.sortReplies();
         return bot;
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -361,13 +369,58 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
         }
     }
 
-    protected String Checker(String msg) {
+    protected boolean Commands(String msg) {
+        Message message;
+        MemberData data = new MemberData("Commands","red");
+        String[] commands = {"/help","/commands","/nm","/admin"};
+        switch(msg){
+            case "/help":
+                msg = "Para todos os comandos digite /commands. Para apoio técnico envie email para a equipa";
+                message = new Message(msg,false,data);
+                messageAdapter.add(message);
+                campoMensagens.setSelection(campoMensagens.getCount() -1);
+                return true;
+            case "/commands":
+                int i;
+                msg = "Comandos existentes: ";
+                for(i = 0; i<commands.length; i++){
+                    msg += "\n";
+                    msg += ". " + commands[i];
+                }
+                message = new Message(msg,false,data);
+                messageAdapter.add(message);
+                campoMensagens.setSelection(campoMensagens.getCount() -1);
+                return true;
+            case "/admin":
+                login();
+                return true;
+            case "/nm":
+                dark = true;
+                View v = findViewById(R.id.avatar);
+                View root = v.getRootView();
+                root.setBackgroundColor(Color.parseColor("#141d26"));
+                return true;
+            default:
+                return false;
+        }
+    }
 
-        if (msg.compareTo("#01") == 0)
-            msg = "https://www.youtube.com/watch?v=Hf0lmtOqKeQ";
-        else if (msg.compareTo("#02") == 0)
-            msg = "Beijo para ti também sexy <3";
-        return msg;
+    protected String Checker(String msg) {
+        switch(msg){
+            case "#01":
+                msg = "https://www.youtube.com/watch?v=Hf0lmtOqKeQ";
+                return msg;
+            case "#02":
+                msg = "Beijo para ti também sexy <3";
+                return msg;
+            default:
+                return msg;
+        }
+    }
+
+    private void login(){
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 
     private void copyFile(InputStream in, OutputStream out) throws IOException {

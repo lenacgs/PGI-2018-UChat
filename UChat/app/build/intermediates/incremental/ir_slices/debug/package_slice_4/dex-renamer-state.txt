@@ -1,4 +1,4 @@
-#Sun Dec 16 01:06:28 GMT 2018
-base.0=D\:\\Pedro\\GitHub\\PGI-2018-UChat\\UChat\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+#Sun Dec 23 15:34:11 GMT 2018
+base.0=C\:\\Users\\santa\\Desktop\\Aulas\\3 ano\\PGI\\PGI-2018-UChat\\UChat\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
 path.0=classes.dex
 renamed.0=classes.dex
